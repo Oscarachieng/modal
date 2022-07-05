@@ -19,8 +19,15 @@ const hideModal = function (){
     modal.classList.add("hidden");
     overlay.classList.add("hidden");
 }
+// adding keydown event for Escape key
+const hideModalWithEscapeKey = function(e){
+   if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+       hideModal();
+   }
+}
 // Adds the event listeners.
 openModal.forEach(item => item.addEventListener("click", showModal));
 closeModal.addEventListener("click", hideModal);
 overlay.addEventListener("click", hideModal);
+document.addEventListener("keydown", hideModalWithEscapeKey);
 
