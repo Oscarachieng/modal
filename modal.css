@@ -3,9 +3,9 @@
 main{
     background-color: chocolate;
     height: 400px;
-    justify-content: space-between;
-    justify-content: center;
+    align-content: center;
     padding-top: 100px;
+    padding-left: 400px;
 }
 .open-modal{
     margin-left: 100px;
@@ -17,6 +17,7 @@ main{
     border-radius: 50px;
     border-width: 1px;
     border-color: white;
+    margin: 30px;
 }
 button{
     margin-left: 100px;
